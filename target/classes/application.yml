@@ -1,0 +1,38 @@
+#
+# JDBC properties
+#
+spring:
+  application:
+    name: StyLash
+  datasource:
+    url: jdbc:mysql://localhost:3306/stylash_database
+    username: springstudent
+    password: springstudent
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: 21522348@gm.uit.edu.vn
+    password: bxtwrcpmlhkxdauy
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+application:
+  security:
+    jwt:
+      #      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      #      expiration: 86400000 # a day
+      #      refresh-token:
+      #        expiration: 604800000 # 7 days
+      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      expiration: 86400000 # a day
+      refresh-token:
+        expiration: 604800000 # 7 days
+
+cloudinary:
+  cloud_name: djxszgsln
+  api_key: 925724911559638
+  api_secret: SvVdpKQunbpo-AmdQQ-81JNqXUw
